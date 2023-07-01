@@ -1,0 +1,25 @@
+inherit_gem:
+    rubocop-shopify: rubocop.yml
+
+AllCops:
+  TargetRubyVersion: 3.1.2
+  Exclude:
+    - 'test/tmp/**/*'
+    - 'vendor/bundle/**/*'
+    - 'spec/**/*'
+    - 'bin/**/*'
+
+Style/MethodCallWithArgsParentheses:
+  Exclude:
+    - '**/Gemfile'
+    - 'test/**/*'
+
+Style/ClassAndModuleChildren:
+  Exclude:
+    - 'test/**/*'
+
+Style/ClassMethodsDefinitions:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 120
